@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pet Shop</title>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"></div>
+        </header>
+
+        <article>
+
+            <aside class="add-animal">
+                <ul>
+                    <li>
+                        <input class="add add-dog" type="button"  onclick="showForm(0)">
+                        <form>
+                            <div class="form-group">
+                                <label for="dogName">Name</label>
+                                <input type="text" class="form-control" id="dogName" minlength="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="dogPrice">Price</label>
+                                <input type="number" class="form-control" id="dogPrice" min="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="dogColor">Color</label>
+                                <input type="color" class="form-control" id="dogColor">
+                            </div>
+                            <input type="button" class="btn btn-success" value="Add" >
+                        </form>
+                    </li>
+
+                    <li>
+                        <input class="add add-cat" type="button"  onclick="showForm(1)">
+                        <form>
+                            <div class="form-group">
+                                <label for="catName">Name</label>
+                                <input type="text" class="form-control" id="catName" minlength="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="catPrice">Price</label>
+                                <input type="number" class="form-control" id="catPrice" min="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="catColor">Color</label>
+                                <input type="color" class="form-control" id="catColor">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="catFluffy">
+                                <label class="form-check-label" for="catFluffy">Fluffy</label>
+                            </div>
+                            <input type="button" class="btn btn-success" value="Add">
+                        </form>
+                    </li>
+
+                    <li>
+                        <input class="add add-hamster" type="button"  onclick="showForm(2)">
+                        <form>
+                            <div class="form-group">
+                                <label for="hamsterPrice">Price</label>
+                                <input type="number" class="form-control" id="hamsterPrice" min="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="hamsterColor">Color</label>
+                                <input type="color" class="form-control" id="hamsterColor">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="hamsterFluffy">
+                                <label class="form-check-label" for="hamsterFluffy">Fluffy</label>
+                            </div>
+                            <input type="button" class="btn btn-success" value="Add">
+                        </form>
+                    </li>
+                </ul>
+            </aside>
+
+            <section class="pet-shop-view">
+                <div class="list-cats">
+                    <h4>Cats</h4>
+                    <ul class="list-group">
+
+                    </ul>
+                </div>
+
+                <div class="list-expensive">
+                    <h4>High cost</h4>
+                    <ul class="list-group">
+
+                    </ul>
+                </div>
+
+                <div class="list-fluffy">
+                    <h4>Fluffy/white</h4>
+                    <ul class="list-group">
+
+                    </ul>
+                </div>
+            </section>
+
+        </article>
+        <div class="active-img"></div>
+        <div class="active-img"></div>
+        <div class="active-img"></div>
+    </div>
+
+
+    <script src="js/animals.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

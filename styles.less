@@ -1,0 +1,159 @@
+@firstColor:#384c5b;
+@secondColor:#53aeea;
+@thirdColor:#f0f0f0;
+
+html{
+  margin:0;
+}
+body{
+  margin:0;
+  width:100%;
+  height:100%;
+  .bg('img/body.jpg'; @s:cover; @a:fixed);
+}
+
+header{
+  margin:10px 0 40px 0;
+  padding:5px 0;
+  border-bottom: 2px solid white;
+
+  .logo{
+    width:330px;
+    height: 100px;
+    .bg('img/logo.png'; @s:cover);
+  }
+}
+
+aside {
+  width:30%;
+  margin:0;
+  float:left;
+
+  ul {
+    margin: 0 auto;
+    list-style-type: none;
+
+    li:after{
+      margin: 20px 0;
+      .after;
+    }
+
+    .add {
+      width: 100px;
+      height: 100px;
+      border: none;
+      outline: inherit;
+      float:left;
+
+      &:hover {cursor: pointer;}
+    }
+
+    .add-cat {
+      .bg('img/cat_default2.png'; @s:cover);
+      &:active {.bg('img/cat_active2.png'; @s:cover);}
+    }
+
+    .add-dog {
+      .bg('img/dog_default.png'; @s:cover);
+      &:active {.bg('img/dog_active.png'; @s:cover);}
+    }
+
+    .add-hamster {
+      .bg('img/hamster_default.png'; @s:cover);
+      &:active {.bg('img/hamster_active.png'; @s:cover);}
+    }
+
+    form{
+      display:none;
+      margin:50px 5px;
+      padding:10px;
+      width:50%;
+      float:left;
+      border-radius:5px;
+      box-shadow: 1px 1px 10px .1px black;
+      background-color: rgba(255, 255, 255, .2);
+
+      label{
+        color:white;
+      }
+    }
+
+    .show-form{
+      display:block;
+    }
+  }
+}
+
+.pet-shop-view{
+  width:65%;
+  float:left;
+
+  div{
+    width:32%;
+    padding:5px;
+    border-radius: 5px;
+    float:left;
+    margin:50px 2px;
+    box-shadow: 1px 1px 10px .1px black;
+    background-color: rgba(255, 255, 255, .2);
+
+    &:nth-of-type(2){ margin-top:0;}
+    &:nth-of-type(3){ margin-top:100px;}
+
+    h4{
+      text-align: center;
+      padding:5px;
+      color:white;
+      font-weight: bold;
+    }
+
+    .btn-secondary {
+      float:right;
+      padding: 0 5px;
+      border-radius: 100px;
+    }
+  }
+}
+
+.active-img{
+  width:1px;
+  height:1px;
+  opacity: 1;
+  position: absolute;
+  top:0;
+  right:0;
+
+  &:nth-of-type(1) {.bg('img/dog_active.png'; @s:cover);}
+  &:nth-of-type(2) {.bg('img/cat_active2.png'; @s:cover);}
+  &:nth-of-type(3) {.bg('img/hamster_active.png'; @s:cover);}
+}
+
+
+/*my mixings*/
+.after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.divAbs(@top: 0; @left: 0){
+  position:absolute;
+  bottom:0;
+  left:0;
+  margin-top:@top;
+  margin-left:@left;
+}
+
+.bg(@url; @r: no-repeat; @s: auto; @a: scroll){
+  background: url(@url) @r top center @a;
+  -webkit-background-size: @s;
+  -moz-background-size: @s;
+  -o-background-size: @s;
+  background-size: @s;
+}
+
+.br(@font: 3px; @color: @secondColor){
+  border:@font solid @color;
+}

@@ -1,0 +1,179 @@
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: url('img/body.jpg') no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header {
+  margin: 10px 0 40px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid white;
+}
+header .logo {
+  width: 330px;
+  height: 100px;
+  background: url('img/logo.png') no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+aside {
+  width: 30%;
+  margin: 0;
+  float: left;
+}
+aside ul {
+  margin: 0 auto;
+  list-style-type: none;
+}
+aside ul li:after {
+  margin: 20px 0;
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+aside ul .add {
+  width: 100px;
+  height: 100px;
+  border: none;
+  outline: inherit;
+  float: left;
+}
+aside ul .add:hover {
+  cursor: pointer;
+}
+aside ul .add-cat {
+  background: url('img/cat_default2.png') no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+aside ul .add-cat:active {
+  background: url('img/cat_active2.png') no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+aside ul .add-dog {
+  background: url('img/dog_default.png') no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+aside ul .add-dog:active {
+  background: url('img/dog_active.png') no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+aside ul .add-hamster {
+  background: url('img/hamster_default.png') no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+aside ul .add-hamster:active {
+  background: url('img/hamster_active.png') no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+aside ul form {
+  display: none;
+  margin: 50px 5px;
+  padding: 10px;
+  width: 50%;
+  float: left;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px .1px black;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+aside ul form label {
+  color: white;
+}
+aside ul .show-form {
+  display: block;
+}
+.pet-shop-view {
+  width: 65%;
+  float: left;
+}
+.pet-shop-view div {
+  width: 32%;
+  padding: 5px;
+  border-radius: 5px;
+  float: left;
+  margin: 50px 2px;
+  box-shadow: 1px 1px 10px .1px black;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.pet-shop-view div:nth-of-type(2) {
+  margin-top: 0;
+}
+.pet-shop-view div:nth-of-type(3) {
+  margin-top: 100px;
+}
+.pet-shop-view div h4 {
+  text-align: center;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}
+.pet-shop-view div .btn-secondary {
+  float: right;
+  padding: 0 5px;
+  border-radius: 100px;
+}
+.active-img {
+  width: 1px;
+  height: 1px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.active-img:nth-of-type(1) {
+  background: url('img/dog_active.png') no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.active-img:nth-of-type(2) {
+  background: url('img/cat_active2.png') no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.active-img:nth-of-type(3) {
+  background: url('img/hamster_active.png') no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*my mixings*/
+.after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
